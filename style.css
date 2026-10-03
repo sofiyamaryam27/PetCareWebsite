@@ -1,0 +1,560 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#4facfe,#43e97b);
+    padding:25px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+header h1{
+    color:white !important;
+    font-size:48px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    text-shadow:2px 2px 10px rgba(0,0,0,.3);
+}
+
+/* Navigation */
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:rgb(253, 252, 252);
+    text-decoration:none;
+    margin:0 15px;
+    padding:10px 18px;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:25px;
+    transition:0.3s;
+    display:inline-block;
+    background:transparent;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,0.2);
+    border-radius:25px;
+}
+
+/* Active link */
+nav a:visited{
+    color:white;
+}
+
+/* Hero Section */
+
+section img{
+    margin-top:20px;
+}
+
+/* Pets Section */
+#pets{
+    padding: 30px;
+    text-align: center;
+}
+
+/* Services Section */
+#services{
+    padding:50px;
+    background:#e8f5e9;
+    text-align:center;
+}
+
+#services h2{
+    margin-bottom:20px;
+}
+
+#services h3{
+    margin:20px 0;
+    color:darkgreen;
+}
+
+#services ul,
+#services ol{
+    list-style-position:inside;
+    display:inline-block;
+    text-align:left;
+    margin-top:10px;
+}
+
+#services li{
+    margin:10px 0;
+}
+.service-box{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.service-box div{
+    width:300px;
+}
+
+.service-box ul,
+.service-box ol{
+    text-align:left;
+    margin-top:15px;
+}
+
+.service-box li{
+    margin:10px 0;
+}
+
+/* Price Table */
+
+#price{
+    padding:30px;
+    text-align:center;
+}
+
+table{
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+table,th,td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:#4CAF50;
+    color:white;
+}
+
+th,td{
+    padding:15px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+/* Appointment Form */
+
+#appointment{
+    padding:30px;
+    background-color:#f9f9f9;
+}
+
+#appointment h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+form{
+    width:50%;
+    margin:auto;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+input[type="submit"]{
+    background-color:#4CAF50;
+    color:white;
+    border:none;
+    cursor:pointer;
+    padding:12px;
+}
+
+input[type="submit"]:hover{
+    background-color:green;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+}
+
+footer a:hover{
+    color:yellow;
+}
+
+/* Smooth Scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+/* Body */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(to right,#f7fff7,#eefcff);
+}
+
+h1{
+    margin:0;
+    padding:0;
+}
+
+
+
+/* All Sections */
+section{
+    padding:60px 30px;
+    text-align:center;
+}
+
+/* Section Headings */
+section h2{
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+/* Alternate Background */
+#pets{
+    background:white;
+}
+
+#services{
+    background:#e8f5e9;
+}
+
+#price{
+    background:white;
+}
+
+#appointment{
+    background:#e8f5e9;
+}
+
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background:#dff6dd;
+    padding:50px;
+}
+
+.hero-text{
+    width:50%;
+    text-align:left;
+}
+
+.hero-text h2{
+    font-size:40px;
+}
+
+.hero-text p{
+    font-size:18px;
+    margin:20px 0;
+    line-height:1.8;
+}
+
+.hero-image img{
+    width:400px;
+    height:300px;
+    border-radius:20px;
+    object-fit:cover;
+    animation:float 3s ease-in-out infinite;
+}
+
+/* Animation */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+    background:#4CAF50;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    display:inline-block;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:darkgreen;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+#about{
+    background:white;
+    padding:50px;
+    text-align:center;
+}
+
+#about h2{
+    margin-bottom:20px;
+}
+
+#about p{
+    width:70%;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* ===========================
+   PET CARDS
+=========================== */
+
+.pet-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.pet-card{
+    width:230px;
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+
+.pet-card:hover{
+    transform:translateY(-10px);
+}
+
+.pet-card img{
+    width:200px;
+    height:150px;
+    border-radius:10px;
+    object-fit: cover;
+}
+
+/* Login Page */
+
+#login{
+    width:40%;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+#login h2{
+    margin-bottom:25px;
+}
+
+#login input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+#login input[type="submit"]{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+#login input[type="submit"]:hover{
+    background:darkgreen;
+}
+
+/* Dashboard */
+
+#dashboard{
+    padding:50px;
+    text-align:center;
+}
+
+.dashboard-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin:30px 0;
+}
+
+.dashboard-card{
+    width:220px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-10px);
+}
+
+.dashboard-card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.dashboard-card p{
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* Contact Page */
+
+#contact-page{
+    padding:60px;
+    text-align:center;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.contact-card{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.contact-card h3{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.contact-card p{
+    margin:8px 0;
+}
+
+/* Register Page */
+
+#register{
+    width:40%;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+#register h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#register input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+#register input[type="submit"]{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+#register input[type="submit"]:hover{
+    background:darkgreen;
+}
+
+/* Services Page */
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
+}
+
+.service-card{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+    text-align:center;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.service-card p{
+    line-height:1.6;
+}
